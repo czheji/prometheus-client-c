@@ -105,7 +105,7 @@ include(FindThreads)
 
 add_library(prom SHARED)
 
-target_compile_options(prom PRIVATE "-Werror" "-Wuninitialized" "-Wall" "-Wno-unused-label" "-std=gnu11")
+target_compile_options(prom PRIVATE "-Werror" "-Wuninitialized" "-Wall" "-Wno-unused-label" "-std=gnu11" "-D_GNU_SOURCE=1")
 target_compile_options(prom PUBLIC "-Werror" "-Wuninitialized" "-Wall" "-Wno-unused-label" "-std=gnu11")
 
 target_include_directories(
